@@ -1,0 +1,170 @@
+extends layout
+
+block content
+  body.animsition
+    .navigation-wrapper
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            #navigation.navigation
+              ul
+                li.active
+                  a.animsition-link(href='/inicio', title='Regresar') REGRESAR
+                li
+                  a.animsition-link(href='in-client', title='Ingreso Cliente') INGRESO CLIENTE
+                  ul
+                    li
+                      a(href='service-list.html', title='Service List') Service List
+                    li
+                      a(href='service-detail.html', title='Service Detail') Service Detail
+                
+    .space-medium
+      .container
+        .row
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.bg-primary.pinside40
+            .contact-info
+              .logo.mb40
+                a(href='index.html')
+                  img.img-responsive(src='images/logo-white.png', alt='')
+              ul.listnone
+                li
+                  i.icon-placeholder.icon-secondary.icon-2x
+                  address
+                    | 9870 St Vincent Place, 
+                    br
+                    |               Glasgow, DC 45
+                li
+                  i.icon-phone-call.icon-secondary.icon-2x
+                  p +1 (800) 123 - 456
+                li
+                  i.icon-email.icon-secondary.icon-2x
+                  p beautysalon@gmail.com
+                li
+                  i.icon-clock.icon-secondary.icon-2x
+                  p Mon-Sun : 10am : 07pm
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.outline.pinside40
+            .row
+              .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                h1 INGRESAR CLIENTE
+            .row
+              form
+                // Textarea
+                .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                  // Text input
+                  .form-group
+                    //label.control-label(for='name') Name :
+                    input#name.form-control(name='name', type='text', placeholder='NOMBRE ', required='')
+                // Text input
+                .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                  .form-group
+                    //label.control-label(for='email') E-mail :
+                    input#email.form-control(name='email', type='text', placeholder='e-mail', required='')
+                // Text input
+                .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                  .form-group
+                    //label.control-label(for='phone') Phone :
+                    input#tel.form-control(name='tel', type='text', placeholder='TELEFONO', required='')
+                .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                  .form-group
+                    //label.control-label(for='subject') Subject :
+                    input#cel.form-control(name='cel', type='text', placeholder='CELULAR', required='')
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                  .form-group
+                    //label.control-label(for='textarea') Message :
+                    textarea#coment.form-control(name='textarea', rows='6', placeholder='Comentarios', required='')
+                // Button
+                .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                  .form-group
+                    button#saveclient.btn.btn-default(name='saveclient') GUARDAR 
+        
+    .footer
+      .container
+        .row
+          .col-lg-offset-1.col-lg-3.col-md-offset-1.col-md-3.col-sm-6.col-xs-12
+            .footer-widget.footer-contact
+              h2.footer-title CONTACTO
+              ul.listnone
+                li
+                  .row
+                    .col-md-2
+                      i.fa.fa-phone
+                    .col-md-10
+                      h4.call-no
+                        a(href='contact.html') +1 (800) 123 - 456
+                li
+                  .row
+                    .col-md-2
+                      i.fa.fa-envelope-o
+                    .col-md-10
+                      h4.mail-text
+                        a(href='contact.html') beautysalon@gmail.com
+                li
+                  .row
+                    .col-md-2
+                      i.fa.fa-clock-o
+                    .col-md-10
+                      h4.time-text
+                        a(href='contact.html') Mon-sun : 10am : 07pm
+          .col-lg-offset-1.col-lg-3.col-md-offset-1.col-md-3.col-sm-6.col-xs-12
+            .footer-widget
+              h2.footer-title Quick Links
+              ul.listnone
+                li
+                  i.fa.fa-caret-right
+                  a(href='index.html') Home
+                li
+                  i.fa.fa-caret-right
+                  a(href='service-list.html') Services
+                li
+                  i.fa.fa-caret-right
+                  a(href='testimonial.html') Testimonial
+                li
+                  i.fa.fa-caret-right
+                  a(href='blog-default.html') News
+                li
+                  i.fa.fa-caret-right
+                  a(href='pricing.html') Pricing
+                li
+                  i.fa.fa-caret-right
+                  a(href='contact.html') Contact
+    .tiny-footer
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12 Copyrights@2017 | All Rights Reserve
+    // back to top icon
+    a.cd-top(href='#0', title='Go to top') Top
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='js/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='js/bootstrap.min.js')
+    script(src='js/menumaker.js')
+    // sticky header
+    script(type='text/javascript', src='js/jquery.sticky.js')
+    script(type='text/javascript', src='js/sticky-header.js')
+    // animsition
+    script(type='text/javascript', src='js/animsition.js')
+    script(type='text/javascript', src='js/animsition-script.js')
+    // Back to top script
+    script(src='js/back-to-top.js', type='text/javascript')
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')    
+    //script.
+      function initMap() {
+      var myLatLng = {
+      lat: 23.0225,
+      lng: 72.5714
+      };
+      var map = new google.maps.Map(document.getElementById('googleMap'), {
+      zoom: 8,
+      center: myLatLng,
+      scrollwheel: false,
+      });
+      var image = 'images/map-pin.png';
+      var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image,
+      title: 'Hello World!'
+      });
+      }
+    script(src='https://maps.googleapis.com/maps/api/js?&callback=initMap', async='', defer='')

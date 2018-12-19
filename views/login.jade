@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Inicio sesi&oacute;n
+    link(rel='stylesheet', href='/css/inicio_sesion.css')
+    script(src='/js/jquery-3.2.1.min.js')
+    script(src="/js/inicio_sesion.js")
+  body
+    form(method="post")
+      div(class='login-container')
+        div(class='login-header')
+          h1 Inicio de sesi&oacute;n
+        div(class='login-body')
+          //label(for='user_name') Nombre de usuario:
+          input(type='text', class='login-input', name='user_name', autocomplete="off", required='' placeholder='Usuario')
+          //label(for='password_user') Contrase&ntilde;a:
+          input(type='password', class='login-input', name='password_user', required='' placeholder='Password' )
+          br
+          if typeof(message) != 'undefined'
+            label Credenciales no validas, intentelo nuevamente
+          if typeof(response) != 'undefined' 
+            if response == 'auth'
+              label No autenticado, inicie sesi&oacute;n
+            else if response == 'out'
+              label Sesi&oacute;n finalizada
+            else if response == 'privil'
+              label No posse permisos para acceder
+          br
+          input(type='submit', value='iniciar sesión')  

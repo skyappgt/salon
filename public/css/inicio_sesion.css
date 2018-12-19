@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url('/images/backlogin.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.login-container{
+	width: 400px;
+	height: 340px;
+	padding: 125px 45px 0 45px;
+	margin-left: 30%;
+	margin-top: 1%;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	box-shadow: 2px 0px 27px #000;
+}
+.login-input{
+	width: 60%;
+	margin: 10px 0;
+}
+input[type=submit]{
+	width: 50%;
+	margin: 5px 0;
+	height: 40px;
+}
+label, h1{
+	color: white;
+}
+input{
+	text-align: center;
+}

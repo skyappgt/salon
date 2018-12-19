@@ -1,0 +1,144 @@
+extends layout
+
+block content
+  
+
+  body.animsition
+    .header
+      .container
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .logo
+              a(href='/inicio')
+                img(src='images/backlogin.png', alt='')
+          |       
+          .col-lg-9.col-md-9.col-sm-12.col-xs-12
+            .row
+                         
+              .col-lg-4.col-md-4.col-sm-3.col-xs-12
+                .top-btn
+                  a.btn.btn-default(href="/service") Iniciar Servicio
+    // navigation
+    .navigation-wrapper
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            #navigation.navigation
+              ul
+                li.active
+                  a.animsition-link(href="/inicio", title="Inicio") Inicio
+                |             
+                li
+                  a.animsition-link(href='/service', title='Lista de Servicios') SERVICIOS
+                  ul
+                    li
+                      a(href='/service', title='Lista de Servicios') Lista Servicios
+
+                    li
+                      a(href='/dservice', title='Detalle de Servicios') Detalle Servicios
+             
+                | 
+                li
+                  a.animsition-link(href="/client", title="Clientes") CLIENTES
+                  |                           
+                li
+                  a.animsition-link(href="/precio", title="Cuenta") PRECIOS
+                  |               
+                  
+                li
+                  a.animsition-link(href="/users", title="Usuarios") USUARIOS
+                |             
+                li
+                  a.animsition-link(href="/cuenta", title="Cuenta") CUENTA
+                |             
+                li
+                  a.animsition-link(href="style-guide.html", title="Style Guide") style guide
+    .hero-section
+      // navigation
+      
+    
+    .footer
+      
+          .col-lg-offset-1.col-lg-3.col-md-offset-1.col-md-3.col-sm-6.col-xs-12
+            .footer-widget.footer-contact
+              h2.footer-title Contact Info
+              |           
+              ul.listnone
+                li
+                  .row
+                    .col-md-2
+                      i.fa.fa-phone
+                    |                 
+                    .col-md-10
+                      h4.call-no
+                        a(href="contact.html") +1 (800) 123 - 456
+                |             
+                li
+                  .row
+                    .col-md-2
+                      i.fa.fa-envelope-o
+                    |                 
+                    .col-md-10
+                      h4.mail-text
+                        a(href="contact.html") beautysalon@gmail.com
+                |             
+                li
+                  .row
+                    .col-md-2
+                      i.fa.fa-clock-o
+                    |                 
+                    .col-md-10
+                      h4.time-text
+                        a(href="contact.html") Mon-sun : 10am : 07pm
+          |       
+          .col-lg-offset-1.col-lg-3.col-md-offset-1.col-md-3.col-sm-6.col-xs-12
+            .footer-widget
+              h2.footer-title Quick Links
+              |           
+              ul.listnone
+                li
+                  i.fa.fa-caret-right
+                  a(href="index.html") Home
+                |             
+                li
+                  i.fa.fa-caret-right
+                  a(href="service-list.html") Services
+                |             
+                li
+                  i.fa.fa-caret-right
+                  a(href="testimonial.html") Testimonial
+                |             
+                li
+                  i.fa.fa-caret-right
+                  a(href="blog-default.html") News
+                |             
+                li
+                  i.fa.fa-caret-right
+                  a(href="pricing.html") Pricing
+                |             
+                li
+                  i.fa.fa-caret-right
+                  a(href="contact.html") Contact
+    .tiny-footer
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12 Copyrights@2017 | All Rights Reserve
+    // back to top icon
+    a.cd-top(href="#0", title="Go to top") Top
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src="js/jquery.min.js")
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src="js/bootstrap.min.js")
+    script(src="js/menumaker.js")
+    // animsition
+    script(type="text/javascript", src="js/animsition.js")
+    script(type="text/javascript", src="js/animsition-script.js")
+    // sticky header
+    script(type="text/javascript", src="js/jquery.sticky.js")
+    script(type="text/javascript", src="js/sticky-header.js")
+    // testimonial-carousel
+    script(type="text/javascript", src="js/owl.carousel.min.js")
+    |  
+    script(type="text/javascript", src="js/testimonial-carousel.js")
+    // Back to top script
+    script(src="js/back-to-top.js", type="text/javascript")

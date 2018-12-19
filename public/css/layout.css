@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.row{
+	margin-left: 0px;
+}
+a{
+	color: #fff;
+}
+.conteiner{
+	margin-top: 2%;
+	padding-left: 17%;
+	width: 98%;
+	min-height: 500px;
+}
+.sistem-name h4{
+	margin: 0;
+	margin-top: 15px;
+	margin-left: 15%;
+}
+.main-menu{
+	width: 100%;
+	background: #c299ff;
+	color: #fff;
+	display: inline-flex;
+	box-shadow: 4px 0px 7px #000;
+}
+.content-elements{
+	width: 60%;
+	display: inline-flex;
+	padding: 35px 23px 0px 23px;
+}
+.parqueo{
+	width: 60%;
+	display: inline-flex;
+	padding: 35px 23px 0px 23px;
+}
+
+.content-right{
+	width: 30%;
+	text-align: right;
+	padding: 20px;
+	display: inline-flex;
+}
+.log-out{
+	padding-top: 5px;
+	padding-left: 5%;
+}
+.element{
+	display: inline-flex;
+}
+.element li{
+	padding: 0px 10%;
+}
+.sub-element{
+	display: block;
+	z-index: 1000;
+	position: absolute;
+	box-shadow: 0px 0px 2px #000;
+	background-color: rgba(255, 255, 204, 0.9);
+}
+ul{
+	list-style: none;
+}
+.sub-element{
+	padding: 0px;
+}
+.sub-element li{
+	padding: 5px 10px;
+}
+.sub-element li:hover{
+	background-color: rgba(255, 153, 102, 0.7);
+}
+.sub-element li a{
+	color: #000;
+}
+.sub-element.hidden{
+	visibility: hidden;
+	opacity: 0;
+	min-height: 0px;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	transition: all 500ms;
+}
+.sub-element.visible{
+	visibility: visible;
+	opacity: 1;
+	min-height: auto;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	transition: all 500ms;
+}
+.footer{
+	background: #c299ff;
+	color: #fff;
+	width: 100%;
+	height: auto;
+	padding: 2% 0;
+	text-align: center;
+	box-shadow: 0px 0px 7px #000;
+}

@@ -1,0 +1,45 @@
+extends layout
+
+script(src="/javascripts/parqueo/asignacion.js") 
+
+block content
+  form(method='post' style="width:1250px;")
+    h3 Asignación de Parqueo
+    br
+
+    table(class='table table-hover')
+      thead
+        tr
+          th Capacidad
+          th Descripcion
+          th Disponible
+          th Seleccionar
+      tbody
+        for aparqueo in parqueo
+          tr 
+            td #{aparqueo.Disponibles}
+            td #{aparqueo.Descripcion}
+            td #{aparqueo.Capacidad}
+            td 
+            input(type="radio", name="asigna", required='true' value="#{aparqueo.Codigo_Parqueo}")
+    .form-group.row
+      //input(type='submit', class='btn btn-primary', value='Parqueos Disponibles')
+    div(class="form-group row")
+        img(src="/images/parqueo1.jpg", class="movie-poster" style="width:800px; margin-left:-250px; margin-top:-25px")
+        div(class='col-sm-3')
+          
+          input(type='text', name='anio', required='true', class='form-control' placeholder="Año" style="margin-top:50px;")
+          h2
+            div(for='nombre' id="nomb")
+          //input( name="semestre" type="text" required='true' placeholder="Semestre" class='form-control' style="margin-top:5px; margin-left: 0px;")
+        div(class='col-sm-3')
+            input(type='text', name='codigo', required='true' class='form-control' placeholder="Código" style="margin-top:50px") 
+            h2
+              div(for='Apellido' id="ape") 
+            //input( name="mensualidad" type="text" required='true' placeholder="Mensualidad" class='form-control' style="margin-top:5px; margin-left: 0px;") 
+            //input( name="parqueo" type="text" required='true' placeholder="#Parqueo" class='form-control' style="margin-top:5px; margin-left: 10px;")
+            div(class='col-sm-3')          
+              input( id="asignap" type="submit" required='true' class='btn btn-primary' value="Asignar Parqueo" style="margin-top:25px; margin-left: 50px;")        
+      
+
+    
